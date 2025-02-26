@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/a86c937b-8ccb-4c88-abfa-700bad8e9bcd
+
 # Chipotle Rewards Manager
 
 A Next.js application for managing and tracking Chipotle rewards and promotional offers. This web app allows users to:
