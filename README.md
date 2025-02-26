@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chipotle Rewards Manager
+
+A Next.js application for managing and tracking Chipotle rewards and promotional offers. This web app allows users to:
+
+- View their Chipotle rewards
+- Track expiration dates
+- Manage reward usage status
+- View reward details and terms
+
+## Features
+
+- Modern, responsive UI built with Tailwind CSS
+- Dark mode support
+- Client-side reward management
+- Support for multiple reward types (BOGO, Free Entrée, etc.)
+- Expiration tracking and notifications
+
+## Prerequisites
+
+- Node.js 18.x or later
+- npm, yarn, or pnpm package manager
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to launch.
 
-## Learn More
+5. Retrieve your rewards.json by logging in on your browser to Chipotle. Have Charles or similar network monitor running to find the request made to https://services.chipotle.com/promo/v2/customers/promotions?countryCode=US. Response will include all the promotions/offers you've added online. (Sample JSON file located in the data folder of this repo)
 
-To learn more about Next.js, take a look at the following resources:
+6. Upload the .json file to the application to view and manage your rewards.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
